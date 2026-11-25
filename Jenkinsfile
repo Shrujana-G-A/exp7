@@ -32,8 +32,7 @@ pipeline {
     }
     post {
         success {
-            echo "Pipeline succeeded! Image 
-${REGISTRY}/${IMAGE_NAME}:${BUILD_NUMBER} is available locally and in the registry."
+            echo "Pipeline succeeded! Image ${REGISTRY}/${IMAGE_NAME}:${BUILD_NUMBER} is available locally and in the registry."
         }
     }
 }
